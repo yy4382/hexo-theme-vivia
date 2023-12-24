@@ -208,6 +208,17 @@
     flex-wrap: nowrap
     margin: 1.2em 0
     transition: background trans-style
+    position relative
+    &:before
+      content: '';
+      background: var(--blockquote-bar);
+      width: 4px;
+      position: absolute;
+      left: 8px;
+      border-radius: 2px;
+      top: 20px;
+      bottom: 20px;
+      transition: background trans-style;
   footer
       font-size: font-size
       margin: line-height 0
